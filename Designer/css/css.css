@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    max-width: 100%;
+}
+.navbar-color{
+    background: #444444;
+}
+.menu-text{
+    color: black;
+    font: normal 16pt Arial;
+}
+#rodape{
+    height: 100px;
+    width: 100%;
+    background: #444444;
+    color: #aaa;
+    text-align: center;
+}
+.rodape-text{
+    color: #777777;
+    font: normal 16pt Arial;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+#semititulo{
+    font-size: 75px;
+}
+#titulo{
+    font-size: 150px;
+}
+h1 {
+    text-align: center;
+}
+
+hr {
+    width: 250px;
+    height: 2px;
+    background-color: black;
+}
+form {
+    margin: 0 0 2em 0;
+}
+
+label {
+    color: #484848;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin: 0 0 1em 0;
+}
+.menu-fix{
+    position: fixed;
+}
+.form-input{
+    width:700px;
+    text-align: center;
+}
+a{
+    color: black;
+}

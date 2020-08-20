@@ -1,0 +1,243 @@
+.menutop {
+    margin-top: 25px;
+    float: left;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.menushop {
+    float: left;
+    width: 100%;
+}
+
+.fundoshop {
+    background-color: white;
+}
+
+.temascenter {
+    background-color: rgba(235, 235, 235, 0.466);
+    border-radius: 10px;
+    border-color: blanchedalmond solid;
+}
+
+.temas {
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 300px;
+    height: 350px;
+    margin-left: 50px;
+}
+
+.bordagif {
+    border: none;
+}
+
+.margem-bt-cont {
+    margin-left: 5px;
+}
+
+.bordatema {
+    border-radius: 15px;
+}
+
+.corposhop {
+    width: 100%;
+    height: 100%;
+}
+
+.menutopfix {
+    margin-top: 25px;
+    width: 100%;
+    float: left;
+    z-index: 9999;
+    position: fixed;
+}
+
+.menutopfixeperfil {
+    margin-top: 25px;
+    float: left;
+    width: 100%;
+}
+
+.corpo {
+    width: 990px;
+    margin: auto;
+}
+
+.conteudo {
+    display: table;
+}
+
+.imgconteudo {
+    display: table-cell;
+    float: left;
+    margin-left: 15px;
+}
+
+.textconteudo {
+    display: table-cell;
+    float: left;
+    width: 450px;
+    margin-left: 60px;
+    color: black;
+    text-align: justify;
+}
+
+.linhacontentudo {
+    color: black;
+    background-color: black;
+    border-radius: 10px;
+    height: 2px;
+    width: 400px;
+}
+
+.linhabene {
+    color: black;
+    background-color: black;
+    border-radius: 10px;
+    height: 2px;
+    width: 250px;
+}
+
+.beneficio {
+    margin-top: 50px;
+}
+
+.benecenter {
+    background-color: rgba(230, 227, 227, 0.466);
+    border-radius: 10px;
+    border-color: blanchedalmond solid;
+}
+
+.imgcenter {
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.linhatrans {
+    background-color: rgba(0, 0, 0, 0.219);
+    color: rgba(0, 0, 0, 0.171);
+    width: 100%;
+}
+
+.textcarousel {
+    color: black;
+    font-size: 25px;
+}
+
+.tabelatamanho {
+    width: 600px;
+    border-radius: 50px;
+}
+
+.textotabelacabecalho {
+    text-align: center;
+}
+
+.textotabelacabecalho {
+    text-align: center;
+}
+
+.grid_480 {
+    width: 480;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-bottom-60 {
+    margin-bottom: 60px;
+}
+
+.f-left {
+    float: left;
+}
+
+.navegadores {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    /* padrão */
+}
+
+.colunadireita {
+    float: right;
+    width: 45%;
+}
+
+.colunaesquerda {
+    float: left;
+    width: 45%;
+    margin-left: 10%;
+}
+
+.finalcolunas {
+    clear: both;
+}
+
+.campea {
+    font-size: 25px;
+    color: black;
+}
+
+.textobeneficio {
+    font-size: 18px;
+    color: black;
+}
+
+.colunadireitasobre {
+    float: right;
+    width: 40%;
+    margin-right: 10px;
+}
+
+.colunaesquerdasobre {
+    float: left;
+    width: 35%;
+    margin-left: 5%;
+}
+
+.logindiv {
+    width: 100%;
+    height: 100%;
+}
+
+.formlogin {
+    width: 500px;
+    text-align: center;
+}
+
+.textologin {
+    font-size: 20px;
+}
+
+.assuntoform {
+    width: 500px;
+    height: 250px;
+}
+
+.divsion{
+    width: 10px;
+    height: 250px;
+    background-color: black;
+}
+
+.fontcont{
+    font-family: Caveat-Regular;
+}
+.img-nov-lg{
+    width: 50%;
+    height: 250px;
+}
+.img-nov-lg-grand{
+    width: 95%;
+    height: 550px;
+}
+.limit-space{
+    width: 100%;
+}
