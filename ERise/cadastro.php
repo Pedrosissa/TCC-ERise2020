@@ -87,13 +87,12 @@
                 </div>
                 <br>
                 <button type="submit" class="btn btn-outline-primary">Enviar </button>
-                
+            </form>
+            <br>
+            <br>
         </center>
-        <br>
-        <br>
-        </form>
     </div>
-    
+
     <footer id="myFooter">
         <div class="container">
             <ul>
