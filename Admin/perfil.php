@@ -65,27 +65,27 @@ session_start();
         <hr>
         <br>
         <br>
-        <div class="colunaesquerda">
+        <div class="col-sm-3 colunaesquerda">
             <div>
                 <h2>
                     Opções do perfil
                 </h2>
                 <br>
                 <br>
-                <button type="button" class="btn btn-outline-primary btn-lg" style="width: 450px;">Editar</button>
+                <button type="button" class="btn btn-outline-primary btn-lg btn-block" >Editar</button>
                 <br>
                 <br>
-                <button type="button" class="btn btn-outline-secondary btn-lg" style="width: 450px;"><a href="../Lojas/index.php"> Visualizar loja </a></button>
+                <button type="button" class="btn btn-outline-secondary btn-lg btn-block"><a href="../Lojas/index.php"> Visualizar loja </a></button>
                 <br>
                 <br>
-                <button type="button" class="btn btn-outline-success btn-lg" style="width: 450px;" data-toggle="modal" data-target="#staticBackdrop">Termos</button>
+                <button type="button" class="btn btn-outline-success btn-lg btn-block"  data-toggle="modal" data-target="#staticBackdrop">Termos</button>
                 <br>
                 <br>
-                <button type="button" class="btn btn-outline-danger btn-lg" style="width: 450px;" data-toggle="modal" data-target="#exampleModal">Deletar</button>
+                <button type="button" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Deletar</button>
 
             </div>
         </div>
-        <div class="colunadireita">
+        <div class="col-sm-6 colunadireita">
             <h2>Informações extras</h2>
             <br>
             <form action="#" method="POST">
