@@ -137,16 +137,16 @@ include_once "../API/conexao.php"
                         $pesquisa = filter_input(INPUT_POST, 'pesquisar', FILTER_SANITIZE_STRING);
                         if ($pesquisa) {
                             $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-                            $result_pesquisa = "SELECT * FROM funcionarios WHERE nome LIKE '%$nome%'";
+                            $result_pesquisa = "SELECT * FROM tab_func WHERE func_name LIKE '%$nome%'";
                             $resultado = mysqli_query($conn, $result_pesquisa);
                             echo "<br>";
                             while ($row_pesq = mysqli_fetch_assoc($resultado)) {
                                 echo "<tr>";
-                                echo "<td>" . $row_pesq['id'] . "</td>";
-                                echo "<td>" . $row_pesq['nome'] . "</td>";
-                                echo "<td>" . $row_pesq['prof'] . "</td>";
-                                echo "<td>" . $row_pesq['datacadas'] . "</td>";
-                                echo "<td><a href='../API/apagaruser.php?id=" . $row_pesq['id'] . "'>
+                                echo "<td>" . $row_pesq['func_id'] . "</td>";
+                                echo "<td>" . $row_pesq['func_name'] . "</td>";
+                                echo "<td>" . $row_pesq['func_prof'] . "</td>";
+                                echo "<td>" . $row_pesq['func_data_cadas'] . "</td>";
+                                echo "<td><a href='../API/apagaruser.php?id=" . $row_pesq['func_id'] . "'>
                                 <button type='button' class='btn btn-danger'>
                                 Apagar</button></a></td>";
                                 echo "</tr>";

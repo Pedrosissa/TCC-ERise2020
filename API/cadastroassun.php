@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $text = $_POST['text']; // Pegandos os dados dos formularios no metodo POST e passandos os valores as variaveis //
 
 // Colocandos os dados na tabela no banco de dados //
-$user = "INSERT INTO suporte(nome, email, assun) VALUES ('$nome', '$email', '$text')";
+$user = "INSERT INTO tab_supor(supor_name, supor_email, supor_text) VALUES ('$nome', '$email', '$text')";
 $user_finais = mysqli_query($conn, $user);
 
 // Informando se foi cadastrado ou não //

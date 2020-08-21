@@ -138,19 +138,19 @@ include_once "../API/conexao.php"
                         $pesquisa = filter_input(INPUT_POST, 'pesquisar', FILTER_SANITIZE_STRING);
                         if ($pesquisa) {
                             $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-                            $result_pesquisa = "SELECT * FROM suporte WHERE nome LIKE '%$nome%'";
+                            $result_pesquisa = "SELECT * FROM tab_supor WHERE supor_name LIKE '%$nome%'";
                             $resultado = mysqli_query($conn, $result_pesquisa);
                             echo "<br>";
                             while ($row_pesq = mysqli_fetch_assoc($resultado)) {
                                 echo '<tr>';
-                                echo "<td>" . $row_pesq['id'] . "</td>";
-                                echo "<td>" . $row_pesq['nome'] . "</td>";
-                                echo "<td>" . $row_pesq['email'] . "</td>";
-                                echo "<td style='text-align: justify;'>" . $row_pesq['assun'] . "</td>";
-                                echo "<td><a href='../API/apagaruser.php?id=" . $row_pesq['id'] . "'>
+                                echo "<td>" . $row_pesq['supor_id'] . "</td>";
+                                echo "<td>" . $row_pesq['supor_name'] . "</td>";
+                                echo "<td>" . $row_pesq['supor_email'] . "</td>";
+                                echo "<td style='text-align: justify;'>" . $row_pesq['supor_text'] . "</td>";
+                                echo "<td><a href='../API/apagaruser.php?id=" . $row_pesq['supor_id'] . "'>
                                 <button type='button' class='btn btn-outline-danger'>
                                 Apagar</button></a></td>";
-                                echo "<td><a href='#?id=" . $row_pesq['id'] . "'>
+                                echo "<td><a href='#?id=" . $row_pesq['supor_id'] . "'>
                                 <button type='button' class='btn btn-outline-primary'>
                                 Responder</button></a></td>";
                                 echo "</tr>";

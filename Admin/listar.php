@@ -137,18 +137,18 @@ include_once "../API/conexao.php"
                         $pesquisa = filter_input(INPUT_POST, 'pesquisar', FILTER_SANITIZE_STRING);
                         if ($pesquisa) {
                             $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-                            $result_pesquisa = "SELECT * FROM user WHERE nome LIKE '%$nome%'";
+                            $result_pesquisa = "SELECT * FROM tab_users WHERE user_nome LIKE '%$nome%'";
                             $resultado = mysqli_query($conn, $result_pesquisa);
                             echo "<br>";
                             while ($row_pesq = mysqli_fetch_assoc($resultado)) {
                                 echo '<tr>';
-                                echo "<td>" . $row_pesq['id'] . "</td>";
-                                echo "<td>" . $row_pesq['nome'] . "</td>";
-                                echo "<td>" . $row_pesq['datacadas'] . "</td>";
-                                echo "<td><a href='../API/apagaruser.php?id=" . $row_pesq['id'] . "'>
+                                echo "<td>" . $row_pesq['user_id'] . "</td>";
+                                echo "<td>" . $row_pesq['user_nome'] . "</td>";
+                                echo "<td>" . $row_pesq['user_data_cadas'] . "</td>";
+                                echo "<td><a href='../API/apagaruser.php?id=" . $row_pesq['user_id'] . "'>
                                 <button type='button' class='btn btn-outline-danger'>
                                 Apagar</button></a></td>";
-                                echo "<td><a href='editar.php?id=" . $row_pesq['id'] . "'>
+                                echo "<td><a href='editar.php?id=" . $row_pesq['user_id'] . "'>
                                 <button type='button' class='btn btn-outline-primary'>
                                 Editar</button></a></td>";
                                 echo "</tr>";

@@ -6,7 +6,7 @@
         $email = $_POST['email']; // Recebendo os dados pelo post //
         $senha = MD5($_POST['senha']);
 
-        $user = "SELECT * FROM user WHERE email = '$email' AND senha = '$senha'"; // Inicio da consulta no banco //    
+        $user = "SELECT * FROM tab_users WHERE user_email = '$email' AND user_password = '$senha'"; // Inicio da consulta no banco //    
         $get = mysqli_query($conn, $user);
         $num = mysqli_num_rows($get);
 
@@ -17,8 +17,8 @@
             while($percorer = mysqli_fetch_array($get)){
                 // Vendo se o usuario é um cliente ou adm
                 // No banco por exemplo tem um campo chamado type, onde os adm tem o valor 1 e os clientes 0
-                $adm = $percorer['type']; // pegando o valor do campo type
-                $nome = $percorer['nome']; // Pegando o nome do usuario
+                $adm = $percorer['user_type']; // pegando o valor do campo type
+                $nome = $percorer['user_nome']; // Pegando o nome do usuario
 
                 session_start();
 

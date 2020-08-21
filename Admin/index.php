@@ -37,12 +37,12 @@ session_start();
 
         <?php
         include '../API/conexao.php';
-        $sql = "SELECT datacadas, COUNT(id) FROM user GROUP BY datacadas";
+        $sql = "SELECT user_data_cadas, COUNT(user_id) FROM tab_users GROUP BY user_data_cadas";
         $buscar = mysqli_query($conn, $sql);
 
         while ($dados = mysqli_fetch_array($buscar)) {
-          $datacadas = $dados['datacadas'];
-          $clientes = $dados['COUNT(id)'];
+          $datacadas = $dados['user_data_cadas'];
+          $clientes = $dados['COUNT(user_id)'];
 
 
         ?>
@@ -80,12 +80,12 @@ session_start();
         ['Profissão', 'Quantidade'],
         <?php
         include '../API/conexao.php';
-        $sql = "SELECT prof, COUNT(id) FROM funcionarios GROUP BY prof";
+        $sql = "SELECT func_prof, COUNT(func_id) FROM tab_func GROUP BY func_prof";
         $buscar = mysqli_query($conn, $sql);
 
         while ($dados = mysqli_fetch_array($buscar)) {
-          $id = $dados['COUNT(id)'];
-          $prof = $dados['prof'];
+          $id = $dados['COUNT(func_id)'];
+          $prof = $dados['func_prof'];
         ?>
 
           ['<?php echo $prof; ?>', <?php echo $id; ?>],

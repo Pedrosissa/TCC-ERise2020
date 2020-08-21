@@ -51,6 +51,11 @@
                             Cadastro
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Admin/perfil.php">
+                            Voltar
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

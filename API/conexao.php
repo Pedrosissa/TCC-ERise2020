@@ -2,6 +2,6 @@
 	$servidor = "localhost";
 	$usuario = "root";
 	$senha = "";
-	$dbname = "bancotest";
+	$dbname = "erise";
 	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 ?>

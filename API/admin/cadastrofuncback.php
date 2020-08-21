@@ -10,7 +10,7 @@
     $data = $_POST['datanasc']; // Pegandos os dados dos formularios no metodo POST e passandos os valores as variaveis //
   
     // Colocandos os dados na tabela no banco de dados //
-    $user = "INSERT INTO funcionarios(nome, email, senha, cpf, rg, prof, datanas, datacadas) VALUES ('$nome', '$email', '$senha', '$cpf', '$rg', '$prof', '$data', NOW())";    
+    $user = "INSERT INTO tab_func(func_name, func_email, func_password, func_cpf, func_rg, func_prof, func_data_nas, func_data_cadas) VALUES ('$nome', '$email', '$senha', '$cpf', '$rg', '$prof', '$data', NOW())";    
     $user_finais = mysqli_query($conn, $user);
 
     // Informando se foi cadastrado ou não //

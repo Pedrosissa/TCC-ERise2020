@@ -102,6 +102,10 @@ session_start();
                     <input class="form-control formlogin" type="text" placeholder="Logradouro" name="lograd" id="logradouro">
                 </div>
                 <div class="form-group">
+                    <label for="" class="textologin">Cidade</label><br>
+                    <input class="form-control formlogin" type="text" placeholder="Cidade" name="cidade" id="cidade">
+                </div>
+                <div class="form-group">
                     <label for="" class="textologin">Numero</label><br>
                     <input class="form-control formlogin" type="text" placeholder="Numero" name="num" id="numero">
                 </div>
